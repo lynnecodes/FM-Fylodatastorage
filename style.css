@@ -2,22 +2,21 @@ body {
     background: hsl(229, 57%, 11%);
      background-image: url(images/bg-desktop.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 100vw 60vh;   
+    background-position: bottom left;
     font-family: 'Raleway';
     font-size: 14px;
     color: hsl(243, 100%, 93%);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
 }
 
 .content {
     display: grid;
-    grid-template-columns: 300px 450px;
+    grid-template-columns: auto 60%;
     grid-gap: 40px;
 }
 
@@ -26,6 +25,8 @@ body {
     border-radius: 10px 100px 10px 10px;
     margin-top: 20px;
 }
+
+
 
 .logo {
     padding-left: 30px;
@@ -119,9 +120,83 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.GB-status-start {
+    text-align: left;
+}
+
 .GB-status-end {
     text-align: right;
 }
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+    }
+    
+    .content {
+        display: grid;
+        grid-template-columns: 320px;
+        grid-gap: 0px;
+    }
+
+    .content-left {
+        padding-bottom: 50px;
+        margin-bottom: -20px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+    
+    .icons img {
+        height: 30px;
+        width: 30px;
+        border-radius: 15px;
+    }
+
+    .content-right {
+        text-align: center;
+    }
+
+
+    .status-bar-before {
+        width: 270px;
+    }
+    
+    .status-bar-after {
+        width: 200px;
+        transform: translateY(-14px);
+    }
+    
+    .status-bar-circle {
+        background: white;
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateY(-11px) translateX(193px);
+    }
+
+    .popup {
+        transform: translateY(-20px);
+    }
+    
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 0px solid white;
+        transform: translateY(10px) translateX(110px);
+      }
+
+    .GB-status {
+        padding-bottom: 20px;
+    }
+
+}
+
 
 .attribution { 
     padding-top: 10px;
