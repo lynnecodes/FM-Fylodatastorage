@@ -16,8 +16,8 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: auto 60%;
-    grid-gap: 40px;
+    grid-template-columns: 300px 500px;
+    grid-gap: 20px;
 }
 
 .content-left {
@@ -25,8 +25,6 @@ body {
     border-radius: 10px 100px 10px 10px;
     margin-top: 20px;
 }
-
-
 
 .logo {
     padding-left: 30px;
@@ -69,7 +67,7 @@ body {
     color: hsl(229, 57%, 11%);
     border-radius: 10px;
     letter-spacing: 2px;
-    transform: translateY(-160px) translateX(285px);
+    transform: translateY(-160px) translateX(290px);
 }
 
 .arrow-down {
@@ -78,7 +76,7 @@ body {
     border-left: 30px solid transparent;
     border-right: 0px solid transparent;
     border-top: 30px solid white;
-    transform: translateY(10px) translateX(110px);
+    transform: translateY(10px) translateX(111px);
   }
 
 .popup h1 {
@@ -90,7 +88,7 @@ body {
 .status-bar-before {
     background: hsl(229, 57%, 11%);
     height: 10px;
-    width: 400px;
+    width: 440px;
     border-radius: 50px;
     border: 2px solid  hsl(229, 57%, 11%);
 }
@@ -98,7 +96,7 @@ body {
 .status-bar-after {
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     height: 10px;
-    width: 300px;
+    width: 320px;
     border-radius: 50px;
     border: 2px solid  hsl(229, 57%, 11%);
     position: absolute;
@@ -111,7 +109,7 @@ body {
     width: 7px;
     border-radius: 50%;
     position: absolute;
-    transform: translateY(-11px) translateX(293px);
+    transform: translateY(-11px) translateX(314px);
 }
 
 .GB-status {
@@ -183,13 +181,10 @@ body {
     }
     
     .arrow-down {
-        width: 0; 
-        height: 0; 
         border-left: 0px solid transparent;
         border-right: 0px solid transparent;
         border-top: 0px solid white;
-        transform: translateY(10px) translateX(110px);
-      }
+    }
 
     .GB-status {
         padding-bottom: 20px;
